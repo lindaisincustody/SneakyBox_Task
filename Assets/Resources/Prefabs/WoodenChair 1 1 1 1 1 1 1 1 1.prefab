@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5596168498573176952}
-  - component: {fileID: 446616059903922454}
   - component: {fileID: 1341932733325995630}
   - component: {fileID: 8151437853405133100}
   - component: {fileID: 7301667919519220917}
+  - component: {fileID: -5319290883459611570}
   m_Layer: 0
   m_Name: WoodenChair 1 1 1 1 1 1 1 1 1
   m_TagString: Selectable
@@ -28,30 +28,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5247140807013164543}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.8996634, y: 0.9999995, z: -2.9767537}
+  m_LocalPosition: {x: -3.8996634, y: 0.217, z: -2.9767537}
   m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4957777541199352530}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!111 &446616059903922454
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5247140807013164543}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations:
-  - {fileID: 0}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!65 &1341932733325995630
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -86,8 +70,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vertices: []
+  childRenderer: {fileID: 0}
   objectFollow: {fileID: 0}
-  childRenderer: {fileID: 7301667919519220917}
+  materialIndex: 0
 --- !u!23 &7301667919519220917
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -130,6 +115,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &-5319290883459611570
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5247140807013164543}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5bbf08c9b3fb638468015e20546f588b, type: 2}
+  m_CullingMode: 2
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7688842221732532165
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,7 +162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7688842221732532165}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -26.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

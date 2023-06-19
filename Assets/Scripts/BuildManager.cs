@@ -84,6 +84,10 @@ public class BuildManager : MonoBehaviour
         {
             InitializeWithObject(prefabList[2]);
         }
+         else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            InitializeWithObject(prefabList[3]);
+        }
     }
 
     // Object selection with left click
